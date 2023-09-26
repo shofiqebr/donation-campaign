@@ -3,13 +3,16 @@ const Card = ({card}) => {
 
 
     const cardStyles = {
-        backgroundColor: Card_bg,};
+        backgroundColor: Card_bg,
+        };
        
      const categoryStyles = {
-            backgroundColor: Category_bg};
+            backgroundColor: Category_bg,
+            color: Text_and_button_bg
+        };
   return (
     <div>
-      <div className="card card-compact w-96 bg-base-100 shadow-xl style={cardStyles}">
+      <div className="card card-compact w-96 bg-base-100 shadow-xl " style={cardStyles}>
         <figure>
           <img
             src={Picture}
@@ -17,8 +20,8 @@ const Card = ({card}) => {
           />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">{Title}</h2>
-          <p style={categoryStyles}>{Category}</p>
+          <h2 style={categoryStyles} className="card-title">{Title}</h2>
+          <p style={categoryStyles} >{Category}</p>
           
         </div>
       </div>
