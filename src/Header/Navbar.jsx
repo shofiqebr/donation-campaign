@@ -14,19 +14,20 @@ const Navbar = () => {
           </a>
         </div>
         <div className="flex-none">
-          <ul className="menu menu-horizontal px-1">
-            <li>
+          <ul className="flex  px-1">
+            <li className="mx-5">
               <NavLink
-                to="/Home"
-                className={({ isActive, isPending }) =>
-                  isPending ? "pending" : isActive ? "text-red-500 underline" : ""
-                }
+                to="/"
+               
+                 className={({ isActive, isPending }) =>
+                 isPending ? "pending" : isActive ? "text-red-500 underline" : ""
+                 }
               >
                 Home
               </NavLink>
-              ;
+              
             </li>
-            <li>
+            <li className="mx-5">
               <NavLink
                 to="/Donation"
                 className={({ isActive, isPending }) =>
@@ -35,10 +36,10 @@ const Navbar = () => {
               >
                 Donation
               </NavLink>
-              ;
+              
             </li>
 
-            <li>
+            <li className="mx-5">
               <NavLink
                 to="/Statistics"
                 className={({ isActive, isPending }) =>
@@ -47,7 +48,7 @@ const Navbar = () => {
               >
                 Statistics
               </NavLink>
-              ;
+              
             </li>
           </ul>
         </div>
