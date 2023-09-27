@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import DonateCard from "../../../Header/component/donatecard/donateCard";
 
 
+
 const Donation = () => {
 
     const [donates,setDonates] =useState([])
@@ -29,6 +30,7 @@ const Donation = () => {
 
     return (
         <div>
+            
             {donates.length > 0 && (
             <div>
                 <button
@@ -71,5 +73,6 @@ const Donation = () => {
         </div>
     );
 };
+
 
 export default Donation;

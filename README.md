@@ -1,8 +1,13 @@
-# React + Vite
+Search Donations by Category:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+*Describe how users can use the search feature to find donations based on categories.
+Explain how to enter a category in the search bar and click the "Search" button to see donations matching that category.
+Display Donation Statistics:
 
-Currently, two official plugins are available:
+*Explain how the project displays donation statistics using a pie chart.
+Mention what the pie chart represents, such as the percentage of donations made compared to the total donations.
+Remove All Donations:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*Describe the functionality that allows users to delete all donations.
+Explain how users can click a button to clear all donations from the application.
+You can use these descriptions as a starting point and provide more details and instructions in your README file.

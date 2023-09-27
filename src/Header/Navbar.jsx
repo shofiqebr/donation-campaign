@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div>
-      <div className="navbar bg-base-100">
+    <div >
+      <div className="navbar lg:flex-row flex flex-col bg-base-100">
         <div className="flex-1">
           <a className="btn btn-ghost normal-case text-xl">
             <img

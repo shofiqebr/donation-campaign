@@ -28,8 +28,8 @@ const DonateCard = ({card}) => {
         color : "white"
     }
     return (
-        <div className="ml-5">
-            <div style={cardBg} className="card card-side w-4/5 bg-base-100 shadow-xl">
+        <div className="ml-5 grid lg:grid-cols-1 grid">
+            <div style={cardBg} className="card card-side lg:w-4/5 w-full my-3 bg-base-100 shadow-xl">
         <figure>
           <img
             src={Picture}
