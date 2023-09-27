@@ -1,6 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import Card from "./../../HeroArea/Cards/Card";
 import { useEffect, useState } from "react";
+import swal from 'sweetalert';
 
 const SelectedCard = () => {
   const [selectedCard, setSelectedCard] = useState();
@@ -42,10 +43,20 @@ const SelectedCard = () => {
     if(!donateItems){
       addDonateItem.push(selectedCard)
       localStorage.setItem('donates',JSON.stringify(addDonateItem))
+      swal("Good job!", "You donated successfully!", "success");
     }
     else{
-      addDonateItem.push(...donateItems,selectedCard)
-      localStorage.setItem('donates',JSON.stringify(addDonateItem))
+      const isExist = donateItems.find((selectedCard) => selectedCard.id ==id)
+      if(!isExist){
+        addDonateItem.push(...donateItems,selectedCard)
+        localStorage.setItem('donates',JSON.stringify(addDonateItem))
+        swal("Good job!", "You donated successfully!", "success");
+
+      }
+      else{
+        swal("Error!", "No duplicate!", "error");
+      }
+     
     }
 
    }
@@ -68,14 +79,14 @@ const SelectedCard = () => {
         </div>
       </div> */}
 
-      <div className="card card-compact w-96 bg-base-100 shadow-xl">
+      <div className="card card-compact w-2/4 bg-base-100 shadow-xl">
         <figure>
           <img className="w-full h-80"
           src={Picture}
             alt="Shoes"
           />
         </figure>
-        <div className="absolute top-[250px] rounded-lg left-0 w-full bg-opacity-40 bg-black text-white py-2 px-4">
+        <div className="absolute top-[255px] rounded-lg left-0 w-full bg-opacity-50 bg-black text-white py-2 px-4">
           
           <button onClick={handleAddToDonate} style={btnBackground} className="btn  ">donate ${Price}</button>
         </div>
