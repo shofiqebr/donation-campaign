@@ -62,22 +62,7 @@ const SelectedCard = () => {
    }
   return (
     <div className=" flex justify-center items-center">
-      {/* <div className="card card-side bg-base-100 shadow-xl">
-        <figure>
-          <img
-            src={Picture}
-            alt="Movie"
-          />
-        </figure>
-        <div className="card-body">
-          <p>{Title}</p>
-          <h2 className="card-title">{Category}</h2>
-          <p>${Price}</p>
-          <div className="card-actions">
-            <button className="btn btn-primary">View Details</button>
-          </div>
-        </div>
-      </div> */}
+      
 
       <div className="card card-compact w-2/4 bg-base-100 shadow-xl">
         <figure>
