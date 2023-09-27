@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useLoaderData, useParams } from "react-router-dom";
 import Card from "./../../HeroArea/Cards/Card";
 import { useEffect, useState } from "react";
