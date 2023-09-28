@@ -2,6 +2,8 @@ import React from "react";
 import PieChart1 from "../../../Header/component/piechart/PieChart1";
 
 const Statistics = () => {
+    
+  
   return (
     <div className="flex flex-col justify-center items-center">
       <PieChart1></PieChart1>

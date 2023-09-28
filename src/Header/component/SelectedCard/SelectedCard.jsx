@@ -4,6 +4,8 @@ import Card from "./../../HeroArea/Cards/Card";
 import { useEffect, useState } from "react";
 import swal from 'sweetalert';
 
+
+
 const SelectedCard = () => {
   const [selectedCard, setSelectedCard] = useState();
 
