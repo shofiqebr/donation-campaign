@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+
 import Card from "./Card";
 
 
@@ -9,6 +10,7 @@ const Cards = ({cards}) => {
             {
                 cards?.map(card =><Card key={card.id} card={card}></Card>)
             }
+            
         </div>
     );
 };
